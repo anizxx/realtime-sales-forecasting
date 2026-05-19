@@ -36,6 +36,7 @@ def generate_time_features(df: pd.DataFrame) -> pd.DataFrame:
     """Generate calendar and time-based features."""
     LOGGER.info("Generating time-based features...")
     df = df.copy()
+    df["Date"] = pd.to_datetime(df["Date"], errors="raise")
     
     df["day_of_week"] = df["Date"].dt.dayofweek
     df["day_of_month"] = df["Date"].dt.day

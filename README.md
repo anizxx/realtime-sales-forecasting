@@ -20,6 +20,18 @@ Install Phase 1 dependencies:
 pip install -r requirements.txt
 ```
 
+Run the local pipeline with the included sample data:
+
+```bash
+python run_pipeline.py
+```
+
+Run the local pipeline with your own CSV:
+
+```bash
+python run_pipeline.py --source path/to/train.csv --output data/engineered_sales.csv
+```
+
 The full ML, API, dashboard, and Airflow stack is pinned in
 `requirements-full-py311.txt` and should be installed from a Python 3.11
 virtual environment. Airflow 2.10.3 is not compatible with Python 3.13.
