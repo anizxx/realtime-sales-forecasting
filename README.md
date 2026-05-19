@@ -26,6 +26,12 @@ Run the local pipeline with the included sample data:
 python run_pipeline.py
 ```
 
+Open the dashboard:
+
+```bash
+streamlit run dashboard.py
+```
+
 Run the local pipeline with your own CSV:
 
 ```bash
